@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Circuit Tester</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <a name="measuring"></a>
+            <div class="row" style="margin-bottom: 4%";>
+                <div class="column">
+                    <nav id="menu-bar">
+                        <a href="#measuring" id="measuring-link">Testpoint Setup</a>
+                        <a href="#rules" id="rules-link">Rules Setup</a>
+                      </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" style="width: 50%;">
+                    <!--
+                    ******************************************************************************
+                    Table layout
+                        -The whole table layout
+                    ****************************************************************************** 
+                    -->
+                    <div class="table-container">
+                        <table id="table_values">
+                            <thead>
+                                <tr>
+                                    <th>Testpoint</th>
+                                    <th>Minimum Voltage</th>
+                                    <th>Maximum Voltage</th>
+                                    <th>Measured</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="background-color: #7C563E; color: white;">TP 1</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #FF4F4F;">TP 2</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #FFA468;">TP 3</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #FFE66D;">TP 4</td>
+                                    <td><input type="text" maxlength="6" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #7DB764;">TP 5</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #4D94C6;">TP 6</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #C16EB6;">TP 7</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: gainsboro;">TP 7</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>TP 8</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: rgb(53, 53, 53); color: white;">TP 9</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #7C563E; color: white;">TP 10</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #FF4F4F;">TP 11</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #FFA468;">TP 12</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #FFE66D;">TP 13</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #7DB764;">TP 14</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #4D94C6;">TP 15</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #C16EB6;">TP 16</td>
+                                    <td><input type="text" placeholder="Minimum voltage"></td>
+                                    <td><input type="text" placeholder="Maximum voltage"></td>
+                                    <td>N/A</td>
+                                    <td class="unmeasured">N/A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="column" style="width: 50%; padding-left: 1%;" id="rule-print">
+                    <button class="run-test" onclick="ruleCheck()">Run Test</button>
+                    Status: [Complete, awaiting new command..]
+                </div>
+            </div>
+            <a name="rules"></a>
+
+            <!--
+            ******************************************************************************
+            Rule card layout
+                -The first rule card is here and the rest are made on the fly by the user
+            ****************************************************************************** 
+            -->
+            <div class="row">
+                <div class="column" id="rule-div" style="height: 95vh;">
+                    <div class="card">
+                        <div class="inline-block">
+                            <button>IF</button>
+                        </div>
+                        <div class="inline-block">
+                            <select>
+                                <option value="0">TP 1</option>
+                                <option value="1">TP 2</option>
+                                <option value="2">TP 3</option>
+                                <option value="3">TP 4</option>
+                                <option value="4">TP 5</option>
+                                <option value="5">TP 6</option>
+                                <option value="6">TP 7</option>
+                                <option value="7">TP 8</option>
+                                <option value="8">TP 9</option>
+                                <option value="9">TP 10</option>
+                                <option value="10">TP 11</option>
+                                <option value="11">TP 12</option>
+                                <option value="12">TP 13</option>
+                                <option value="13">TP 14</option>
+                                <option value="14">TP 15</option>
+                                <option value="15">TP 16</option>
+                            </select>
+                            <select>
+                                <option value="<">LESS THAN MIN</option>
+                                <option value=">">MORE THAN MAX</option>
+                                <option value="f">FAILED</option>
+                                <option value="p">PASSED</option>
+                            </select>
+                            <button class="add_TP" onclick="appendCard(event)">+</button>
+                        </div>
+                        <textarea class="rule_comment" placeholder="Error message if rule applies" rows="1" cols="50" maxlength="50"></textarea>
+                        <button class="add_TP" onclick="addRule(event)">Add rule</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
