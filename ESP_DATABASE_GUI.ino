@@ -50,10 +50,10 @@ int results[16];                //FAILED or PASSED results of each probe
 int counter = 0;
 
 // SSID and password of Wifi connection:
-const char* ssid = "GOZMOTE-2G9502";
-const char* password = "cosmote13";
-//const char* ssid = "QOSE-FAMILY";
-//const char* password = "cosmote13";
+const char* ssid = "GOZMOTE";
+const char* password = "";
+//const char* ssid = "";
+//const char* password = "";
 
 // Link to local host SQL database
 String URL = "http://192.168.1.4/thesis/test_data.php";
