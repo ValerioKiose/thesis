@@ -24,3 +24,7 @@
 ## Σχεδιάγραμμα
 Διαθέσιμο στο αρχείο Sheet1.pdf
 
+## Φωτογραφίες
+![1000003506](https://github.com/user-attachments/assets/b303209d-22f7-48de-8e9f-137090001edc)
+![1000003507](https://github.com/user-attachments/assets/2b0070a7-0347-497e-92da-eb93d3f2c9cc)
+
